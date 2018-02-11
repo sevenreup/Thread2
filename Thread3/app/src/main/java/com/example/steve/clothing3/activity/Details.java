@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -21,7 +20,6 @@ import com.android.volley.VolleyError;
 import com.example.steve.clothing3.Drawer.Helper.CollapseAnimation;
 import com.example.steve.clothing3.FontManager.FontManager;
 import com.example.steve.clothing3.R;
-import com.example.steve.clothing3.adapter.H_Recycler;
 import com.example.steve.clothing3.database.DatabaseHandler;
 import com.example.steve.clothing3.helper.CollapsingToolBarHelper;
 import com.example.steve.clothing3.network.WebRequest;
@@ -77,10 +75,10 @@ public class Details extends AppCompatActivity {
         final String imageUri = "http://192.168.173.1/clothing/images/"+image_name;
         Picasso.with(this).load(imageUri).into(imageView);
 
-        RecyclerView suggestions = (RecyclerView) findViewById(R.id.suggestions);
-        suggestions.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-        H_Recycler adapter = new H_Recycler(this, Home.categories,R.layout.sugg_card);
-        suggestions.setAdapter(adapter);
+        //RecyclerView suggestions = (RecyclerView) findViewById(R.id.suggestions);
+        //suggestions.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        //H_Recycler adapter = new H_Recycler(this, Home.categories,R.layout.sugg_card);
+        //suggestions.setAdapter(adapter);
 
         size = (Spinner) findViewById(R.id.spinner);
         color = (Spinner) findViewById(R.id.spinner1);

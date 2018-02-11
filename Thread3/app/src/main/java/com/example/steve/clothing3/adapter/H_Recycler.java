@@ -55,7 +55,7 @@ public class H_Recycler extends RecyclerView.Adapter<H_Recycler.ViewHolder>{
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         String item = mData.get(position);
-        System.out.println(item);
+        System.out.println(item+"this is the item");
         if(item.contains("{")){
             JSONObject val = null;
             try {

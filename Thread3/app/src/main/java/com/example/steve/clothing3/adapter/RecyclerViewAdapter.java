@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 import com.example.steve.clothing3.R;
 import com.example.steve.clothing3.activity.Details;
 import com.example.steve.clothing3.activity.Home;
+import com.example.steve.clothing3.database.DatabaseHandler;
 import com.example.steve.clothing3.network.WebRequest;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
@@ -177,6 +178,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             custom = (Button) itemView.findViewById(R.id.customList);
             context = itemView.getContext();
             itemView.setOnClickListener(this);
+            remove.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    DatabaseHandler db = new DatabaseHandler(context);
+                    db.deleteWish(mImage.get(getLayoutPosition()));
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         @Override

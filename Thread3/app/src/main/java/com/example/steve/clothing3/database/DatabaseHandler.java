@@ -160,6 +160,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return array;
     }
 
+    public void deleteWish(String item){
+        System.out.println(item);
+        try {
+            JSONObject object = new JSONObject(item);
+            SQLiteDatabase db = this.getWritableDatabase();
+            String query = "DELETE FROM "+TABLE_WISHLIST+" WHERE `Item`="+object.getString("Item");
+            db.execSQL(query);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     public void loggedIn(String username){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -168,10 +180,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         db.insert(TABLE_LOGIN,null,values);
     }
-
-
-
-
 
 
     public void check(String category){

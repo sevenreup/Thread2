@@ -60,10 +60,10 @@ public class Categories extends AppCompatActivity
 
         ProgressDialog dialog = new ProgressDialog(Categories.this);
         Context context = Categories.this;
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.home_cont);
         dialog.setMessage("Loading");
-        dialog.setCancelable(false);
+        dialog.setCancelable(true);
 
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.home_cont);
         recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
         recyclerView.addItemDecoration(new GridItemDecorator(2, RandomUses.dpToPx(10, this), true));
         H_Recycler adapter = new H_Recycler(context, Home.categories, R.layout.gridiconcard);
@@ -99,7 +99,6 @@ public class Categories extends AppCompatActivity
                 }
                 break;
             case R.id.cart:
-
                 Intent intent = new Intent(this, Wishlist.class);
                 startActivity(intent);
                 Wishlist.list = db.getCart();
