@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.steve.clothing3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Thread_light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SplashScreen" />
+        <activity
+            android:name=".activity.Home"
+            android:label="Home"
+            android:theme="@style/Theme.Thread_light" />
+        <activity
+            android:name=".activity.Template"
+            android:label="Template"
+            android:theme="@style/Theme.Thread_light" />
+        <activity
+            android:name=".activity.Categories"
+            android:label="Categories"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Thread_light" />
+        <activity
+            android:name=".activity.Details"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Thread_light" />
+        <activity
+            android:name=".activity.Wishlist"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Thread_light" />
+
+        <service
+            android:name=".services.HomeBoundService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Base.V22.Theme.AppCompat.Light">
+
+        </activity>
+        <activity
+            android:name=".activity.Payment"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Thread_light" />
+    </application>
+
+</manifest>

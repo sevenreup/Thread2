@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.steve.clothing3.activity.Home">
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/ic_star"
+        android:title="Rate"
+        app:showAsAction="always" />
+</menu>

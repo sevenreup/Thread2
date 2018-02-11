@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.cloths">
+
+    </style>
+
+    <style name="AppTheme.cloths" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="drawer_main">
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:dividerHeight">0.1dp</item>
+        <item name="android:alpha">255</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">start|bottom</item>
+    </style>
+
+    <style name="card_base">
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="app_background_lt">
+        <item name="android:background">@color/colorBg</item>
+    </style>
+    <style name="app_text_header_lt">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/backdrop_title</item>
+    </style>
+    <style name="app_text_header_sub_lt">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/backdrop_subtitle</item>
+    </style>
+    <style name="app_card_background_lt" parent="card_base">
+        <item name="android:background">#fff</item>
+    </style>
+    <style name="app_card_img">
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="app_card_main_header">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/album_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="app_card_sub_header">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="view_lines_lt">
+        <item name="android:background">@color/lines_gray_lt</item>
+    </style>
+    <style name="expand_btn_lt">
+        <item name="android:background">@color/colorBg</item>
+    </style>
+    <style name="expand_btn_txt" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">?android:attr/colorPrimaryDark</item>
+    </style>
+    <style name="special_text_lt">
+        <item name="android:textColor">@color/colorAccent_lt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="app_text_brands_lt">
+        <item name="android:textColor">@color/colorPrimary_lt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="app_drawer_lt">
+        <item name="android:background">@drawable/backgrnd_lt</item>
+    </style>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/signIn_dialog"
+    android:layout_width="330dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_marginTop="20dp"
+        android:hint="First Name"
+        android:layout_marginBottom="3dp"/>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_below="@id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:hint="Surname"
+        android:layout_marginBottom="3dp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_below="@id/surname"
+        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:hint="Number"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_below="@id/number"
+        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:hint="Email"
+        android:layout_marginBottom="3dp"/>
+    <EditText
+        android:id="@+id/location"
+        android:layout_below="@id/email"
+        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:hint="Location"
+        android:layout_marginBottom="3dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@id/location"
+        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:hint="Password"
+        android:layout_marginBottom="3dp"/>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_below="@id/password"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sign Up"/>
+
+</RelativeLayout>

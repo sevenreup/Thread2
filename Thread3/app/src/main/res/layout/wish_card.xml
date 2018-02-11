@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="Name"
+                android:textAlignment="viewStart"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name"
+                android:paddingBottom="2dp"
+                android:text="Shop Name" />
+
+            <TextView
+                android:id="@+id/descr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shop_name"
+                android:paddingBottom="2dp"
+                android:text="$ 0.0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descr"
+                android:paddingBottom="15dp"
+                android:text="In Stock"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/rem_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/stock"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:background="@drawable/curve"
+                    android:text="Remove"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/customList"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:text="@string/vertical_elipsis"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

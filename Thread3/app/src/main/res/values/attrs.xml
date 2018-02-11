@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General app attributes -->
+    <attr name="app_background" format="reference" />
+    <attr name="app_view_lines" format="reference"/>
+    <!-- End of general shit-->
+
+    <!-- Text app attributes -->
+    <attr name="app_text_main_header" format="reference" />
+    <attr name="app_text_sub_header" format="reference" />
+    <attr name="app_text_regular_header" format="reference" />
+    <attr name="app_text_special_header" format="reference" />
+    <attr name="app_text_brand" format="reference" />
+    <!-- End of Text shit-->
+
+    <!-- Drawer app attributes -->
+    <attr name="app_drawer" format="reference"/>
+    <attr name="app_drawer_header" format="reference"/>
+    <attr name="app_drawer_text" format="reference"/>
+    <!-- End of Drawer shit-->
+
+    <!-- Text Icons app attributes -->
+    <attr name="icon_font_bold" format="reference" />
+    <!-- End of general shit-->
+
+    <!-- Widget controls app attributes -->
+    <!-- Button attributes -->
+    <attr name="app_button" format="reference" />
+    <attr name="expandable_button" format="reference"/>
+    <attr name="expandable_button_txt" format="reference"/>
+    <!-- End of Button-->
+    <!-- End of Widget controls shit-->
+
+    <!-- Card app attributes -->
+    <attr name="app_card_background" format="reference"/>
+    <attr name="app_card_img_background" format="reference"/>
+    <attr name="app_card_text_header" format="reference"/>
+    <attr name="app_card_text_subheader" format="reference"/>
+    <!-- End of Card shit-->
+
+</resources>

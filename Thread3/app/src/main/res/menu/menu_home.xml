@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.steve.clothing3.activity.Home">
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/magic_wand"
+        android:title="favorite"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_basket"
+        android:title="@string/toolbal_cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_tool"
+        android:title="Share"
+        app:showAsAction="always" />
+
+
+</menu>

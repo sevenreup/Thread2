@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:inputType="phone"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Phone Number"/>
+    <EditTextPreference
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Email"/>
+
+    <EditTextPreference
+        android:inputType="textCapWords"
+        android:title="Location"/>
+
+    <Preference
+        android:title="Delete Account"/>
+    <Preference
+        android:title="Invite Friends"/>
+
+</PreferenceScreen>

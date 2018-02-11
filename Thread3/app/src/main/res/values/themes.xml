@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Light AppTheme -->
+    <style name="Theme.Thread_light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_lt</item>
+        <item name="colorAccent">@color/colorAccent_lt</item>
+        <item name="app_background">@style/app_background_lt</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_lt</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="app_card_background">@style/app_card_background_lt</item>
+        <item name="app_drawer">@style/app_drawer_lt</item>
+        <item name="app_text_main_header">@style/app_text_header_lt</item>
+        <item name="app_text_sub_header">@style/app_text_header_sub_lt</item>
+        <item name="app_card_img_background">@style/app_card_img</item>
+        <item name="app_card_text_subheader">@style/app_card_sub_header</item>
+        <item name="expandable_button">@style/expand_btn_lt</item>
+        <item name="app_text_special_header">@style/special_text_lt</item>
+        <item name="expandable_button_txt">@style/expand_btn_txt</item>
+        <item name="app_text_brand">@style/app_text_brands_lt</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimary_lt</item>
+        <item name="android:textColorSecondary">@color/colorPrimary_lt</item>
+        <item name="android:textColorSecondaryInverse">@color/colorPrimary_lt</item>
+        <item name="android:statusBarColor">@color/status_bar_lt</item>
+    </style>
+    <!-- End of Main Light AppTheme -->
+</resources>

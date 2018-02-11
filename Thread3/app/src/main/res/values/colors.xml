@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#3399ff</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="windowBackground">#cccccc</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="men">#3399ff</color>
+    <color name="drawer">#12ffffff</color>
+
+    <color name="tool_icon">#fff</color>
+
+    <color name="cardBackgroundColor">#bdbdbd</color>
+    <color name="icon_color">#8a000000</color>
+    <color name="drawer_item_color">#00000000</color>
+    <color name="drawer_color">#c5ffffff</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#a0b9c5</color>
+
+    <color name="colorPrimary_lt">#5f7d8c</color>
+    <color name="colorAccent_lt">#f7931e</color>
+    <color name="colorBg">#fff</color>
+    <color name="lines_gray_lt">#b0bec5</color>
+
+    <color name="foreground_collapse">#7b000000</color>
+    <color name="status_bar_lt">#47758c</color>
+</resources>

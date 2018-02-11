@@ -1,0 +1,11 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_slidermenu"
+    style="?app_drawer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:layout_collapseMode="parallax"
+    app:layout_scrollFlags="enterAlwaysCollapsed|snap">
+
+
+</android.support.v7.widget.RecyclerView>
